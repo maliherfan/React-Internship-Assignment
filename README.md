@@ -1,4 +1,5 @@
 # React-Internship-Assignment
 
+used api : https://moviesapi.ir/
 
-https://maliherfan.github.io/React-Internship-Assignment/index.html
+live demo : https://maliherfan.github.io/React-Internship-Assignment/index.html
