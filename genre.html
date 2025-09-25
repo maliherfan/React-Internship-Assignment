@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Genres</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/genre.css">
+</head>
+<body>
+    <header>
+        <!-- search box -->
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="search movie..." />
+            <button id="search-button" class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <!-- genre drop down list -->
+        <div class="genre-dropdown">
+            <select id="genre-dropdown" class="genre-dropdown-select">
+                <option value="" selected disabled>Genres</option>
+                <option value="1">Crime</option>
+                <option value="2">Drama</option>
+                <option value="3">Action</option>
+                <option value="4">Biography</option>
+                <option value="5">History</option>
+                <option value="6">Adventure</option>
+                <option value="7">Fantasy</option>
+                <option value="8">Western</option>
+                <option value="9">Comedy</option>
+                <option value="10">Sci-Fi</option>
+                <option value="11">Mystery</option>
+                <option value="12">Thriller</option>
+                <option value="13">Family</option>
+                <option value="14">War</option>
+                <option value="15">Animation</option>
+                <option value="16">Romance</option>
+                <option value="17">Horror</option>
+                <option value="18">Music</option>
+                <option value="19">Film-Noir</option>
+                <option value="20">Musical</option>
+                <option value="21">Sport</option>
+            </select>
+        </div>
+    </header>
+    
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Movie Genres</h2>
+        </div>
+
+        <ul class="genres-list">
+            <li><a class="genre-link active" data-genre-id="1" data-genre-name="Crime">Crime</a></li>
+            <li><a class="genre-link" data-genre-id="2" data-genre-name="Drama">Drama</a></li>
+            <li><a class="genre-link" data-genre-id="3" data-genre-name="Action">Action</a></li>
+            <li><a class="genre-link" data-genre-id="4" data-genre-name="Biography">Biography</a></li>
+            <li><a class="genre-link" data-genre-id="5" data-genre-name="History">History</a></li>
+            <li><a class="genre-link" data-genre-id="6" data-genre-name="Adventure">Adventure</a></li>
+            <li><a class="genre-link" data-genre-id="7" data-genre-name="Fantasy">Fantasy</a></li>
+            <li><a class="genre-link" data-genre-id="8" data-genre-name="Western">Western</a></li>
+            <li><a class="genre-link" data-genre-id="9" data-genre-name="Comedy">Comedy</a></li>
+            <li><a class="genre-link" data-genre-id="10" data-genre-name="Sci-Fi">Sci-Fi</a></li>
+            <li><a class="genre-link" data-genre-id="11" data-genre-name="Mystery">Mystery</a></li>
+            <li><a class="genre-link" data-genre-id="12" data-genre-name="Thriller">Thriller</a></li>
+            <li><a class="genre-link" data-genre-id="13" data-genre-name="Family">Family</a></li>
+            <li><a class="genre-link" data-genre-id="14" data-genre-name="War">War</a></li>
+            <li><a class="genre-link" data-genre-id="15" data-genre-name="Animation">Animation</a></li>
+            <li><a class="genre-link" data-genre-id="16" data-genre-name="Romance">Romance</a></li>
+            <li><a class="genre-link" data-genre-id="17" data-genre-name="Horror">Horror</a></li>
+            <li><a class="genre-link" data-genre-id="18" data-genre-name="Music">Music</a></li>
+            <li><a class="genre-link" data-genre-id="19" data-genre-name="Film-Noir">Film-Noir</a></li>
+            <li><a class="genre-link" data-genre-id="20" data-genre-name="Musical">Musical</a></li>
+            <li><a class="genre-link" data-genre-id="21" data-genre-name="Sport">Sport</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page header -->
+            <div class="page-header">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    BACK
+                </a>
+                <h1 class="genre-title" id="genreTitle">Crime Movies</h1>
+                <div class="movies-count" id="moviesCount">Total: Loading...</div>
+            </div>
+
+            <!-- Movies container -->
+            <div class="movies-container" id="moviesContainer">
+                <div class="loader">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading movies...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/genre.js"></script>
+</body>
+</html>

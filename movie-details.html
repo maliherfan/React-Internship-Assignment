@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie-details.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                BACK
+            </a>
+            <!-- search box -->
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="search movie..." />
+                <button id="search-button" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- genre drop down list -->
+            <div class="genre-dropdown">
+                <select id="genre-dropdown" class="genre-dropdown-select">
+                    <option value="" selected disabled>Genres</option>
+                    <option value="1">Crime</option>
+                    <option value="2">Drama</option>
+                    <option value="3">Action</option>
+                    <option value="4">Biography</option>
+                    <option value="5">History</option>
+                    <option value="6">Adventure</option>
+                    <option value="7">Fantasy</option>
+                    <option value="8">Western</option>
+                    <option value="9">Comedy</option>
+                    <option value="10">Sci-Fi</option>
+                    <option value="11">Mystery</option>
+                    <option value="12">Thriller</option>
+                    <option value="13">Family</option>
+                    <option value="14">War</option>
+                    <option value="15">Animation</option>
+                    <option value="16">Romance</option>
+                    <option value="17">Horror</option>
+                    <option value="18">Music</option>
+                    <option value="19">Film-Noir</option>
+                    <option value="20">Musical</option>
+                    <option value="21">Sport</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="movie-details" id="movie-details">
+            <div class="movie-poster">
+                <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="پوستر فیلم" id="movie-poster" />
+            </div>
+
+            <div class="movie-info">
+                <h1 class="movie-title" id="movie-title">Movie Title</h1>
+
+                <div class="movie-meta">
+                    <div class="meta-item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span id="release-date">1402</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="far fa-clock"></i>
+                        <span id="runtime">120 minute</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-globe"></i>
+                        <span id="country">usa</span>
+                    </div>
+                </div>
+
+                <div class="movie-genres" id="movie-genres">
+                    <span class="genre">action</span>
+                    <span class="genre">comedy</span>
+                    <span class="genre">crime</span>
+                </div>
+
+                <div class="movie-rating">
+                    <i class="fas fa-star"></i>
+                    <span id="vote-average">8.5</span>
+                    <span>/ 10 (</span>
+                    <span id="vote-count">10</span>
+                    <span>)</span>
+                </div>
+
+                <div class="overview">
+                    <h3>Plot</h3>
+                    <p id="overview">Movie's summary will be shown here.</p>
+                </div>
+
+                <div class="crew">
+                    <div class="crew-member">
+                        <h4>Director</h4>
+                        <p id="director">David Fincher</p>
+                    </div>
+                    <div class="crew-member">
+                        <h4>Writer</h4>
+                        <p id="writer">Chuck Palahniuk</p>
+                    </div>
+                    <div class="crew-member">
+                        <h4>Actors</h4>
+                        <p id="actor">Brad Pitt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenes from the movie will be shown here. -->
+        <h2 class="section-title">Movie Scenes</h2>
+        <div class="images" id="images"></div>
+    </div>
+
+    <footer>
+        <p>Movies Info Get From Movies API</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/movie-details.js"></script>
+</body>
+</html>

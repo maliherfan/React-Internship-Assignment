@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search-results.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                BACK
+            </a>
+            <!-- search box -->
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="search movie..." />
+                <button id="search-button" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- genre drop down list -->
+            <div class="genre-dropdown">
+                <select id="genre-dropdown" class="genre-dropdown-select">
+                    <option value="" selected disabled>Genres</option>
+                    <option value="1">Crime</option>
+                    <option value="2">Drama</option>
+                    <option value="3">Action</option>
+                    <option value="4">Biography</option>
+                    <option value="5">History</option>
+                    <option value="6">Adventure</option>
+                    <option value="7">Fantasy</option>
+                    <option value="8">Western</option>
+                    <option value="9">Comedy</option>
+                    <option value="10">Sci-Fi</option>
+                    <option value="11">Mystery</option>
+                    <option value="12">Thriller</option>
+                    <option value="13">Family</option>
+                    <option value="14">War</option>
+                    <option value="15">Animation</option>
+                    <option value="16">Romance</option>
+                    <option value="17">Horror</option>
+                    <option value="18">Music</option>
+                    <option value="19">Film-Noir</option>
+                    <option value="20">Musical</option>
+                    <option value="21">Sport</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="search-info" id="search-info"></div>
+
+        <div id="movies-container" class="movies-list">
+            <div class="loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Fetching results...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/search-results.js"></script>
+</body>
+</html>
